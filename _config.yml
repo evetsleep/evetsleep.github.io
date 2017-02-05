@@ -10,7 +10,7 @@ title: Steven Presley
 email: evetsleep@gmail.com
 
 #write html inside the double quotes to display in jumbotron
-description: "<h3>Write-Output \"Hello, world!\"</h3><h1>PowerShell Journal</h1>"
+description: "<h1>PowerShell Journal</h1>"
 
 
 
