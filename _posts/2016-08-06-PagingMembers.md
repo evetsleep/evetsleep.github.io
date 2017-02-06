@@ -3,7 +3,7 @@ layout: post
 title: "Paging Members from Active Directory"
 date:   2016-08-06 20:00:00
 comments: true
-categories: Active Directory
+categories: activedirectory
 ---
 
 First I'd like to get out of the way that this is my first real blog post.  I am not a regular blogger (clearly) and I don't know how often I'll truly be able to do this, but I desperately want to find ways to share my work and things that I run into on a daily basis so that perhaps others won't have to struggle like I may have.
