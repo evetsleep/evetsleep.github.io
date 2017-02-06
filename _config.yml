@@ -1,5 +1,5 @@
 name:               "Ink"
-description:        "A minimalistic jekyll theme for humans"
+description:        "stuff"
 
 url:                ""
 author:             "evetsleep"
@@ -22,8 +22,8 @@ markdown:           kramdown
 nav:
   - name:           "About"
     href:           "/about"
-  - name:           "Download"
-    href:           "/releases"
+#  - name:           "Download"
+#    href:           "/releases"
 
 sass:
   style:            :compressed
