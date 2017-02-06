@@ -10,7 +10,8 @@ I use [System.DirectoryServices](https://msdn.microsoft.com/en-us/library/system
 
 The problem was simply this. When querying using S.DS.DS (System.DirectoryServices.DirectorySearcher) almost (but not all) results were coming back as an array of bytes instead of their proper types (strings, integers, booleans, etc..). Some attributes were however working.
 
-<img src="/static/img/posts/sd_byte_array01.png" class="center"/>
+
+<img src="/static/img/posts/sd_byte_array01.png" align="middle"/>
 
 Without going into too much detail sd is a PowerShell function that performs S.DS.DS searches against a variety of directories (AD and otherwise). Normally the output would be strings (or an array of strings), but instead as you can see its returning byte arrays. I had to remove the private stuff, but you can see from this that some attributes were properly being rendered, but most were not. This is not normal.
 
