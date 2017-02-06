@@ -1,59 +1,38 @@
 ---
-layout: default
-title: Jekyll Themes
+layout: default 
 ---
-
-<div class="gallery">
-	{% for post in paginator.posts %}
-		<div class="item">
-			<a class="item-inner" href="{{ post.url }}">
-				<div class="item-image"><img src="/thumbnails/{{ post.thumbnail }}"></div>
-				<div class="item-name">{{ post.title }}</div>
-			</a>
-		</div>
-	{% endfor %}
-</div>
-
-<!-- Pager -->
-
-<div class="row-fluid">
-  <div class="span12">
-    <div class="pagination">
-      <ul>
-        {% if paginator.previous_page %}
-
-          {% if paginator.previous_page == 1 %}
-            <li><a href="/">Prev</a></li>
-          {% else %}
-            <li><a href="/page{{ paginator.previous_page }}">Prev</a></li>
-          {% endif %}
-
-        {% else %}
-          <li><span class="disabled">Prev</span></li>
+<header class="bloghead">
+    <h1 class="bloghead-title">
+    <a href="{{ site.url }}/">{{ site.name }}<span>&#39;s blog</span></a>
+  </h1>
+    <nav class="bloghead-nav">
+        {% for nav in site.nav %}
+        <a href="{{ nav.href }}">{{ nav.name }}<span> &nbsp;/&nbsp; </span></a> {% endfor %}
+    </nav>
+</header>
+<div class="content">
+    {% if site.posts.size == 0 %}
+    <h2>No post found</h2> {% else %} {% for post in paginator.posts %}
+    <div class="post-list">
+        <h2 class="post-title">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h2> {% if post.description %}
+        <p>{{ post.description }}</p>
         {% endif %}
-
-        {% if paginator.page == 1 %}
-          <li><span class="active">1</span></li>
-        {% else %}
-          <li><a href="/">1</a></li>
-        {% endif %}
-
-        {% for count in (2..paginator.total_pages) %}
-
-          {% if count == paginator.page %}
-            <li><span class="active">{{ count }}</span></li>
-          {% else %}
-            <li><a href="/page{{ count }}">{{ count }}</a></li>
-          {% endif %}
-        {% endfor %}
-
-        {% if paginator.next_page %}
-          <li><a href="/page{{ paginator.next_page }}">Next</a></li>
-        {% else %}
-          <li><span class="disabled">Next</span></li>
-        {% endif %}
-      </ul>
+        <div class="post-date">
+            <time>{{ post.date | date_to_string }}</time>
+        </div>
     </div>
-  </div>
-</div>
+    {% endfor %} {% if paginator.total_pages > 1 %}
+    <div class="pages">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><</a>
+      {% endif %}
 
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">></a>
+      {% endif %}
+    </div>
+    {% endif %}
+  {% endif %}
+</div>

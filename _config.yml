@@ -1,16 +1,51 @@
-name: Jekyll Themes
-url: http://matt.harzewski.com
-description: Insert tagline here
+name:               "Ink"
+description:        "A minimalistic jekyll theme for humans"
 
-permalink: /themes/:title/
+url:                ""
+author:             "thinker3197"
+email:              "jhondoe@abc.com"
+gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
+twitter:            "jhondoe"
+email:              "jhondoe@abc.com"
+github:             "jhondoe"
+pinterest:          "jhondoe"
+linkedin:           "jhondoe"
+facebook:           "jhondoe"
 
-gems: [jekyll-paginate]
+disqus_shortname:   "thinker3197"
 
-highlighter: pygments
-paginate: 20
+background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
 
-markdown: rdiscount
-rdiscount:
-    extensions: ['smart']
+paginate:           5
+paginate_path:      "/page:num/"
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor']
+baseurl:            ""
+permalink:          /:year/:month/:day/:title/
+
+markdown:           kramdown
+
+nav:
+  - name:           "About"
+    href:           "/about"
+  - name:           "Download"
+    href:           "/releases"
+
+sass:
+  style:            :compressed
+
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+gems:
+  - jekyll-paginate
