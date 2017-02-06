@@ -1,39 +1,28 @@
-# Jekyll configuration
+# Site specific settings
+title: "Title to this website"
+name: "Website name"
+keywords: "Key, words, about, this, website"
+baseurl: "/darcli"
+url: "http://website.com"
+description: "Website description"
+cover: "/assets/img/cover.svg"
+fanpage_id: ""
 
-name: My blog
-description: A jekyll theme
+# Site general settings
+lang: "en"
+lang_alternate: "pt_BR"
+ssl: false # It will redirect to https
 
-# url is currently only used only for the RSS feed in feed.xml
-url: https://scotte.github.io/jekyll-clean
+# Media
+# Just the shortname:
+# facebook: lampiaosec # Rigth
+# facebook: facebook.com/lampiaosec # Wrong
+disqus: test
+twitter: 
+facebook: 
+github: 
+google:
 
-# baseurl will often be '', but for a project page on gh-pages, it needs to
-# be the project name.
-# *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
-#     run it like so: jekyll serve --baseurl=''
-baseurl: /
-
-# This can be '' to hide the Github nav button
-github: ''
-
-# Set this to your UA-# value, or '' to disable the block completely
-gaaccount: ''
-
-# The 'comments' setting enables comments. You'll need to select either
-# disqus or isso below to choose a comment system. Individual posts can
-# override 'comments' to disable on a post-by-post basis.
-comments: false
-
-# Set this to your public isso URL to enable comments via isso. Set to '' to disable isso.
-isso: ''
-
-# Set this to your disqus shortname to enable comments via disqus. Set to '' to disable disqus.
-disqus: ''
-
-permalink: /:year/:month/:title
-paginate: 3
-
-highlighter: rouge
+# Build settings
 markdown: kramdown
-gems: ['jekyll-paginate']
-
-exclude: ['README.md', 'LICENSE']
+permalink: /:categories/:title/
