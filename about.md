@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Automation through PowerShell
+<img src="/static/img/WhoAreYou.PNG" class="center" />
 
 email: evetsleep[at]gmail.com
