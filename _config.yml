@@ -1,10 +1,10 @@
-name:               "Ink"
+name:               "PS"
 description:        "stuff"
 
 url:                ""
 author:             "evetsleep"
 email:              "evetsleep@gmail.com"
-gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
+#gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
 twitter:            "evetsleep"
 github:             "evetsleep"
 linkedin:           "evetsleep"
