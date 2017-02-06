@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "First post...testing the wters"
+date:   2017-02-05 19:54:10 +0700
+categories: [powershell]
+---
+
+Just a simple test!
+
+```powershell
+Write-Host "hello world!"
+```
