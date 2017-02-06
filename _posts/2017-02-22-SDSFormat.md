@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Paging Members from Active Directory"
+title: "How does System.DirectoryServices know how to format an attribute value"
 date:   2016-08-06 20:00:00
 comments: true
 categories: adsi
