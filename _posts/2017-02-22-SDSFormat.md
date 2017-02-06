@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How does System.DirectoryServices know how to format an attribute value"
-date:   2016-08-06 20:00:00
+date:   2017-02-22 20:00:00
 comments: true
 categories: adsi
 ---
