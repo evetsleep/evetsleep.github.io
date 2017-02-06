@@ -1,46 +1,55 @@
-name:               "PS"
-description:        "stuff"
+title: Stack Problems
+description: My Personal Stack Problems
+author: Agus Makmun
+github: https://github.com/agusmakmun
+about: I am freelance developer. Currently doing more in backend, focused in Python and Django.
+disqus_shortname: stackproblems
+google_analytics: UA-XXXXXXXX-Y
+avatar_url: /static/img/avatar.jpg
 
-url:                ""
-author:             "evetsleep"
-email:              "evetsleep@gmail.com"
-#gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
-twitter:            "evetsleep"
-github:             "evetsleep"
-linkedin:           "evetsleep"
+enableTags: true
+tagarray: []
 
-background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
 
-paginate:           5
-paginate_path:      "/page:num/"
+social:
+    - icon: fa-facebook
+      link: "#"
+    - icon: fa-twitter
+      link: "https://twitter.com/agusmakmun6"
+    - icon: fa-linkedin
+      link: "https://www.linkedin.com/in/summonagus"
+    - icon: fa-stack-exchange
+      link: "#"
+    - icon: fa-github
+      link: "https://github.com/agusmakmun"
 
-baseurl:            ""
-permalink:          /:year/:month/:day/:title/
+share:
+  twitter_username: agusmakmun6
+  fb_appid: 1749788565247320
 
-markdown:           kramdown
+urls:
+    - text: About Me
+      url: /about/
+    - text: My Projects
+      url: /projects/
+    - text: XML Feed
+      url: /feed.xml
 
-nav:
-  - name:           "About"
-    href:           "/about"
-#  - name:           "Download"
-#    href:           "/releases"
-
-sass:
-  style:            :compressed
-
-defaults:
-  -
-    scope:
-      path:         ""
-      type:         "pages"
-    values:
-      layout:       "page"
-  -
-    scope:
-      path:         ""
-      type:         "posts"
-    values:
-      layout:       "post"
-
+url: "https://agusmakmun.github.io"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page:num/"
+markdown: kramdown
 gems:
   - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all

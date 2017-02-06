@@ -1,8 +1,9 @@
 ---
+layout: page
 title: About
 permalink: /about/
 ---
 
-<p class="heavy-title"><a href="http://evetsleep.github.io">Stuff</a> is a simple & minimalistic theme for <a href="http://jekyllrb.com">Jekyll</a>, a static site generator.</p>
+I am freelance developer. Currently doing more in backend, focused in Python and Django.
 
->Designed and developed by [@thinker3197](https://github.com/thinker3197).
+email: agus[at]python.web.id
