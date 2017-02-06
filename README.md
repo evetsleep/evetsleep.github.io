@@ -1,34 +1,21 @@
-# Darcli
+Jekyll Themes
+=============
 
-## Demo
+A directory of the best-looking themes for Jekyll blogs
 
-You can see this theme on [gjuniioor.github.io/darcli](https://gjuniioor.github.io/darcli)
 
-## Screenshot
+Submitting a Theme
+------------------
 
-![Screenshot of the them](assets/img/screenshot.png)
+Have a theme you want to share?
 
-## Why the name?
+* Fork the site on GitHub
+* Create a new post in the `_posts` directory and fill out the relevant YAML fields
+* Make a 250x200 thumbnail and drop it in the thumbnails directory. List its filename in the post's markdown file.
+* Test it out, then push your changes up and open a pull request.
 
-It's just a joke: `dark + cli`.
 
-## Features
+License
+-------
 
-* Categories
-* Disqus comments
-* SEO
-	* Description
-	* Keywords
-	* Open Cards to twitter, facebook, linkedin, google+ and others
-* Code post (but no highligth :] )
-* Atom **AND** RSS feeds
-
-## Warnings
-
-This is a theme intended to use to [lampiaosec website](https://lampiaosec.github.io) and after was converted to a general theme to jekyll.
-
-So, any questions, can you contact me ([@gjuniioor](https://github.com/gjuniioor)) or open a [issue](https://github.com/gjuniioor/darcli/issuesi).
-
-## License
-
-This theme is under [GPL3](assets/LICENSE).
+The contents of this repository are licensed under the [GNU Public License.](http://www.gnu.org/licenses/gpl-3.0.html)
