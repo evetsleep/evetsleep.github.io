@@ -1,11 +1,11 @@
 [
 	{
-		"slug": "cool-project",
-		"name": "Cool project 1",
+		"slug": "Github Repositories",
+		"name": "Github Repositories",
 		"image": "placeholder.jpg",
-		"url": "https://www.google.com",
-		"date": "Jan 2014",
-		"tags": ["Angular JS","API"]
+		"url": "https://www.github.com/evetsleep",
+		"date": "Jan 2017",
+		"tags": ["Repositories"]
 	},
 	{
 		"name": "Cool project 2",
