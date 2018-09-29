@@ -6,7 +6,7 @@ comments: true
 categories: activedirectory
 ---
 
-First I'd like to get out of the way that this is my first real blog post.  I am not a regular blogger (clearly) and I don't know how often I'll truly be able to do this, but I desperately want to find ways to share my work and things that I run into on a daily basis so that perhaps others won't have to struggle like I may have.
+First I would like to get out of the way that this is my first real blog post.  I am not a regular blogger (clearly) and I don't know how often I'll truly be able to do this, but I desperately want to find ways to share my work and things that I run into on a daily basis so that perhaps others won't have to struggle like I may have.
 
 So that being said I think I've finally found something that I don't see all that well documented that might be worth talking about.  *Most* people would use the Active Directory cmdlets to get group memberships (specifically `Get-ADGroupMember` or `Get-ADGroup -Properties member -Identity groupName`), but there are a couple of scenarios where this might not be ideal so I wanted to try to document how I page out group memberships using `System.DirectoryServices` objects and methods.  I've found a number of scenarios where Microsoft's Active Directory cmdlets don't fit my personal needs and so I've had to write my own AD cmdlets for a number of situations and this is one of them.
 
